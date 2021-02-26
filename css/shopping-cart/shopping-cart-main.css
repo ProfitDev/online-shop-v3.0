@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --blue-color: #4e72d0;
+    --orange-color: #ef6300;
+    --background-color: rgb(245, 246, 250);
+    --light-font: #9a9a9a;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    padding: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+main table {
+    position: relative;;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin: 20px;
+}
+
+table th, td {
+    text-align: center;
+    color: var(--blue-color) ;
+    justify-content: space-between;
+    flex: 1;
+    /* margin: 20px; */
+    padding: 20px;
+}
+td {
+    text-align: center;
+    color: var(--orange-color) ;
+    justify-content: space-between;
+    flex: 1;
+    /* margin: 20px; */
+    padding: 20px;
+}
+
+@media (max-width: 720px) {
+    table {
+        display: grid;
+
+    }
+    section {
+        padding-top: 100px;
+    }
+}
+
+/* contact form */
+section div img {
+    width: 100%;
+    height: auto;
+}
+section span img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.h-about-us-discription {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+h3 {
+    margin: 15px;
+}
+
+.wr-ab-us-low {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.b-about-us-img {
+    width: 50%;
+    margin: auto;
+    padding: 70px 10px;
+}
+
+
+.b-about-us-discription {
+    display: block;
+    width: 100%;
+    padding: 100px 0 0 70px;
+}
+@media (max-width: 720px) {
+    .h-about-us-discription {
+        display: grid;
+        width: 90%;
+        height: auto;
+        margin-left: 40px;
+    }
+    .wr-ab-us-low {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: auto;
+    }
+    h3 {
+        text-align: center;
+    }
+    .b-about-us-img {
+        width: 100%;
+        height: auto;
+    }
+    .b-about-us-discription {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 0 15px;
+        margin: auto;
+    }
+}

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --blue-color: #4e72d0;
+    --orange-color: #ef6300;
+    --background-color: rgb(245, 246, 250);
+    --light-font: #9a9a9a;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+} 
+
+/* Product menu */
+.slider button {
+    width: auto;
+    height: auto;
+    font-size: 24px;
+    font-weight: 700;
+    color: #f5f6fa;
+    text-align: center;
+    background-color: var(--orange-color);
+    padding: 0.35em 1.2em;
+    margin: 0 0.3 0.3 0;
+    transition: 0.7ms;
+    border-radius: 10px;
+}
+
+.slider button:hover {
+    color: rgb(162, 248, 33);
+    background-color: var(--blue-color);
+    cursor: pointer;
+}
+
+
+
+/* products list container */
+
+.prod-list-container {
+    margin: 0;
+    padding: 0;
+}
+
+.prod-list-inner nav {
+    color: var(--light-font);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+.prod-list-inner header{
+    text-align: center;
+    font-size: 16px;
+}
+.prod-list-inner header h1,
+.prod-list-inner p{
+    padding: 10px;
+}
+
+.prod-list-inner p {
+    color: var(--light-font);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.prod-list-inner nav a{
+    color:var(--blue-color);
+    padding: 8px;
+    text-decoration-line: none;
+}
+
+.prod-list-inner nav a:hover {
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--orange-color);
+}
+
+.slider {
+    display: flex;
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+/* product slider */
+
+.slider-item {
+    font-weight: 700;
+    margin: 10px;
+    padding: 0 10px;
+}
+
+.slider-item article{
+    text-align: center;
+    margin: 5px 0;
+    padding: 10px 0;
+}
+.prod-price {
+    color:var(--blue-color);
+    line-height: 2;
+}
+
+.slider-item img{
+    width: 100%;
+    height: 100%;
+    margin: 5px 0;
+    border-radius: 10px;
+    box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+}
+
+.slider-item button {
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* products list container */
+
+
+@media (max-width: 700px){
+    .prod-list-inner nav a{
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 5px;
+        margin: auto;
+    }
+}

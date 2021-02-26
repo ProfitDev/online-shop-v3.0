@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --blue-color: #4e72d0;
+    --orange-color: #ef6300;
+    --background-color: rgb(245, 246, 250);
+    --light-font: #9a9a9a;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section {
+    margin: 20px;
+}
+
+.ip-address ul li{
+    margin-left: 30px;
+    padding-left: 20px;
+}
+
+@media (max-width: 520px) {
+    section {
+    padding-top: 90px;
+    }
+    h1, h2 {
+        font-size: inherit;
+    }
+
+}
