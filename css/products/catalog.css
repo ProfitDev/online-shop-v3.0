@@ -1,0 +1,83 @@
+
+:root {
+    --blue-color: #4e72d0;
+    --orange-color: #ef6300;
+    --background-color: rgb(245, 246, 250);
+    --light-font: #9a9a9a;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: auto;
+} 
+html, body {
+    height: 100%;
+}
+
+#carouselOffers {
+    min-height: 500px;
+}
+
+#carouselOffers img {
+    max-height: 450px;
+}
+
+.intro {
+    max-width: 400px;
+    margin-top: 150px;
+    text-align: center;
+}
+.card {
+    height: 100%;
+}
+
+.alert {
+    position: fixed;
+    top: 50px; 
+    width: 50%;
+    left: 25%;
+    z-index: 1051;
+}
+
+.catalog-content p {
+    color: var(--light-font);
+    font-weight: bold;
+}
+
+section .nav-item button {
+    font-weight: bold;
+    color: var(--blue-color);
+    border-bottom: var(--blue-color) solid 2px;
+}
+section .nav-item button.active {
+    font-weight: bold;
+    color: var(--orange-color);
+}
+
+.btn {
+    padding: 0.75rem 0.7rem;
+
+}
+.modal-header .close {
+    width: 35px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+.cart-btn {
+    border-radius: 10px;
+    background: transparent;
+}
+
+#cart-badge {
+    color: green;
+    align-items: center;
+    display: block;
+    padding-top: 10px;
+}
