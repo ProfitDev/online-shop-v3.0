@@ -49,8 +49,8 @@ body {
     height: auto;
     flex: 1;
 }
-.slider-link-button,
-.bunner-link {
+.bunner-link-button,
+.slider-link-button {
     width: auto;
     height: auto;
     font-size: 24px;
@@ -64,7 +64,7 @@ body {
     border-radius: 10px;
     text-decoration: none;
 }
-.bunner-link:hover,
+.bunner-link-button:hover,
 .slider-link-button:hover {
     color: rgb(162, 248, 33);
     background-color: var(--blue-color);
