@@ -389,6 +389,7 @@ body {
     body.lock {
         overflow: hidden;
     }
+
     .header-body {
         height: 100px;
         position: fixed;
@@ -474,6 +475,10 @@ body {
         text-align: center;
         font-size: 24px;
     }
+    .header-top-content-burger {
+        font-weight: bold;
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 720px) {
@@ -487,7 +492,6 @@ body {
     }
     .header-top-content-burger {
         font-size: 16px;
-        font-weight: bold;
     }
     .header-link {
         font-size: 20px;

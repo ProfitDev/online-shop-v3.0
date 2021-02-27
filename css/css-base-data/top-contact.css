@@ -78,7 +78,7 @@ body {
     }
 }
 
-@media(max-width: 720px) {
+@media(max-width: 880px) {
     .header-top-content {
         display: none;
     }
