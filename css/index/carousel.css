@@ -99,7 +99,6 @@ body {
 .slider .slick-arrow.slick-prev:hover {
     background-color: rgb(235, 156, 156);
     border-radius: 50%;
-    /* cursor: pointer; */
 }
 
 .slider .slick-dots {

@@ -94,6 +94,7 @@ label textarea {
     color: rgb(162, 248, 33);
     background-color: var(--blue-color);
     cursor: pointer;
+    outline: none;
 }
 
 .low-form-content {
