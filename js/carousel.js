@@ -3,6 +3,7 @@
 $(document).ready(function() {
     $('.slider').slick({
         arrows: true,
+        dots:true,
         // adaptiveHeight: true,
         slidesToShow: 4,
         slidesToScroll: 3,
@@ -32,6 +33,7 @@ $(document).ready(function() {
                 settings: {
                     slidesToScroll: 1,
                     slidesToShow: 1,
+                    speed: 500,
                     touchThreshold: 20,
                     arrows: false,
                 }
