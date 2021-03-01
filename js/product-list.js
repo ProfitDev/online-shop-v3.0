@@ -10,14 +10,14 @@ class ProductListHerbal {
       .then(() => this.addEventListeners());    
   }
   async renderProducts() {
-    let productListDomString = '';
+    let ProductListHerbalDomString = '';
     const products = await this.productService.getProducts();
     [...products]
       .sort( (a, b) => this.sortDirection === 'ascending' 
                          ? a.price - b.price
                          : b.price - a.price)
       .forEach(product => {
-      productListDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        ProductListHerbalDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                   <div class="card product">
                     <img class="card-img-top" src="img/products/${product.image}" 
                         alt="${product.title}">
@@ -36,7 +36,7 @@ class ProductListHerbal {
                   </div>
                 </div>`;
     });
-    this.container.innerHTML = productListDomString;
+    this.container.innerHTML = ProductListHerbalDomString;
   }
   async addEventListeners() {
     document
@@ -55,16 +55,16 @@ class ProductListHerbal {
           this.handleProductBuyClick(event)
         )
       );
-    document.querySelector('.sort-asc').addEventListener('click', async () => {
-        this.sortDirection = 'ascending';
-        await this.renderProducts();
-        this.addEventListeners();
-    });
-    document.querySelector('.sort-desc').addEventListener('click', async () => {
-        this.sortDirection = 'descending';
-        await this.renderProducts();
-        this.addEventListeners();
-    });
+    // document.querySelector('.sort-asc').addEventListener('click', async () => {
+    //     this.sortDirection = 'ascending';
+    //     await this.renderProducts();
+    //     this.addEventListeners();
+    // });
+    // document.querySelector('.sort-desc').addEventListener('click', async () => {
+    //     this.sortDirection = 'descending';
+    //     await this.renderProducts();
+    //     this.addEventListeners();
+    // });
   }
   async handleProductInfoClick(event) {
     const button = event.target; // Button that triggered the modal
@@ -101,14 +101,14 @@ class ProductListSupplements {
       .then(() => this.addEventListeners());
   }
   async renderProducts() {
-    let productListDomString = '';
+    let ProductListSupplementsDomString = '';
     const products = await this.productService.getProducts();
     [...products]
       .sort( (a, b) => this.sortDirection === 'ascending' 
                          ? a.price - b.price
                          : b.price - a.price)
       .forEach(product => {
-      productListDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        ProductListSupplementsDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                   <div class="card product">
                     <img class="card-img-top" src="img/products/${product.image}" 
                         alt="${product.title}">
@@ -127,7 +127,7 @@ class ProductListSupplements {
                   </div>
                 </div>`;
     });
-    this.container.innerHTML = productListDomString;
+    this.container.innerHTML = ProductListSupplementsDomString;
   }
   async addEventListeners() {
     document
@@ -146,16 +146,16 @@ class ProductListSupplements {
           this.handleProductBuyClick(event)
         )
       );
-    document.querySelector('.sort-asc').addEventListener('click', async () => {
-        this.sortDirection = 'ascending';
-        await this.renderProducts();
-        this.addEventListeners();
-    });
-    document.querySelector('.sort-desc').addEventListener('click', async () => {
-        this.sortDirection = 'descending';
-        await this.renderProducts();
-        this.addEventListeners();
-    });
+    // document.querySelector('.sort-asc').addEventListener('click', async () => {
+    //     this.sortDirection = 'ascending';
+    //     await this.renderProducts();
+    //     this.addEventListeners();
+    // });
+    // document.querySelector('.sort-desc').addEventListener('click', async () => {
+    //     this.sortDirection = 'descending';
+    //     await this.renderProducts();
+    //     this.addEventListeners();
+    // });
   }
   async handleProductInfoClick(event) {
     const button = event.target; // Button that triggered the modal
@@ -192,14 +192,14 @@ class ProductListSports {
       .then(() => this.addEventListeners());
   }
   async renderProducts() {
-    let productListDomString = '';
+    let ProductListSportsDomString = '';
     const products = await this.productService.getProducts();
     [...products]
       .sort( (a, b) => this.sortDirection === 'ascending' 
                          ? a.price - b.price
                          : b.price - a.price)
       .forEach(product => {
-      productListDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        ProductListSportsDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                   <div class="card product">
                     <img class="card-img-top" src="img/products/${product.image}" 
                         alt="${product.title}">
@@ -218,7 +218,7 @@ class ProductListSports {
                   </div>
                 </div>`;
     });
-    this.container.innerHTML = productListDomString;
+    this.container.innerHTML = ProductListSportsDomString;
   }
   async addEventListeners() {
     document
@@ -237,16 +237,16 @@ class ProductListSports {
           this.handleProductBuyClick(event)
         )
       );
-    document.querySelector('.sort-asc').addEventListener('click', async () => {
-        this.sortDirection = 'ascending';
-        await this.renderProducts();
-        this.addEventListeners();
-    });
-    document.querySelector('.sort-desc').addEventListener('click', async () => {
-        this.sortDirection = 'descending';
-        await this.renderProducts();
-        this.addEventListeners();
-    });
+    // document.querySelector('.sort-asc').addEventListener('click', async () => {
+    //     this.sortDirection = 'ascending';
+    //     await this.renderProducts();
+    //     this.addEventListeners();
+    // });
+    // document.querySelector('.sort-desc').addEventListener('click', async () => {
+    //     this.sortDirection = 'descending';
+    //     await this.renderProducts();
+    //     this.addEventListeners();
+    // });
   }
   async handleProductInfoClick(event) {
     const button = event.target; // Button that triggered the modal
@@ -283,14 +283,14 @@ class ProductListProbiotics {
       .then(() => this.addEventListeners());
   }
   async renderProducts() {
-    let productListDomString = '';
+    let ProductListProbioticsDomString = '';
     const products = await this.productService.getProducts();
     [...products]
       .sort( (a, b) => this.sortDirection === 'ascending' 
                          ? a.price - b.price
                          : b.price - a.price)
       .forEach(product => {
-      productListDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        ProductListProbioticsDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                   <div class="card product">
                     <img class="card-img-top" src="img/products/${product.image}" 
                         alt="${product.title}">
@@ -309,7 +309,7 @@ class ProductListProbiotics {
                   </div>
                 </div>`;
     });
-    this.container.innerHTML = productListDomString;
+    this.container.innerHTML = ProductListProbioticsDomString;
   }
   async addEventListeners() {
     document
@@ -328,16 +328,16 @@ class ProductListProbiotics {
           this.handleProductBuyClick(event)
         )
       );
-    document.querySelector('.sort-asc').addEventListener('click', async () => {
-        this.sortDirection = 'ascending';
-        await this.renderProducts();
-        this.addEventListeners();
-    });
-    document.querySelector('.sort-desc').addEventListener('click', async () => {
-        this.sortDirection = 'descending';
-        await this.renderProducts();
-        this.addEventListeners();
-    });
+    // document.querySelector('.sort-asc').addEventListener('click', async () => {
+    //     this.sortDirection = 'ascending';
+    //     await this.renderProducts();
+    //     this.addEventListeners();
+    // });
+    // document.querySelector('.sort-desc').addEventListener('click', async () => {
+    //     this.sortDirection = 'descending';
+    //     await this.renderProducts();
+    //     this.addEventListeners();
+    // });
   }
   async handleProductInfoClick(event) {
     const button = event.target; // Button that triggered the modal
@@ -362,10 +362,11 @@ class ProductListProbiotics {
   }
 }
 
+
 class ProductListVitamins {
   constructor(cart) {
     this.cart = cart;
-    this.container = document.querySelector('.products-container-vitamins');
+    this.container = document.querySelector('.products-container-probiotics');
     this.productService = new ProductsService();
     this.sortDirection = 'ascending';
     this.productService
@@ -374,14 +375,14 @@ class ProductListVitamins {
       .then(() => this.addEventListeners());
   }
   async renderProducts() {
-    let productListDomString = '';
+    let ProductListVitaminsDomString = '';
     const products = await this.productService.getProducts();
     [...products]
       .sort( (a, b) => this.sortDirection === 'ascending' 
                          ? a.price - b.price
                          : b.price - a.price)
       .forEach(product => {
-      productListDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+        ProductListVitaminsDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                   <div class="card product">
                     <img class="card-img-top" src="img/products/${product.image}" 
                         alt="${product.title}">
@@ -400,7 +401,7 @@ class ProductListVitamins {
                   </div>
                 </div>`;
     });
-    this.container.innerHTML = productListDomString;
+    this.container.innerHTML = ProductListVitaminsDomString;
   }
   async addEventListeners() {
     document
@@ -419,16 +420,16 @@ class ProductListVitamins {
           this.handleProductBuyClick(event)
         )
       );
-    document.querySelector('.sort-asc').addEventListener('click', async () => {
-        this.sortDirection = 'ascending';
-        await this.renderProducts();
-        this.addEventListeners();
-    });
-    document.querySelector('.sort-desc').addEventListener('click', async () => {
-        this.sortDirection = 'descending';
-        await this.renderProducts();
-        this.addEventListeners();
-    });
+    // document.querySelector('.sort-asc').addEventListener('click', async () => {
+    //     this.sortDirection = 'ascending';
+    //     await this.renderProducts();
+    //     this.addEventListeners();
+    // });
+    // document.querySelector('.sort-desc').addEventListener('click', async () => {
+    //     this.sortDirection = 'descending';
+    //     await this.renderProducts();
+    //     this.addEventListeners();
+    // });
   }
   async handleProductInfoClick(event) {
     const button = event.target; // Button that triggered the modal
@@ -452,3 +453,5 @@ class ProductListVitamins {
     window.showAlert('Продукт додано до кошика:)');
   }
 }
+
+
