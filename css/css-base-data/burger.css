@@ -277,7 +277,6 @@ body {
  .header-menu {
      display: flex;
      align-items: center;
-     /* position: relative; */
  }
 
 .header:before {
@@ -373,10 +372,6 @@ body {
     padding-top: 10px;
 }
 
-
-/* .header-list li:last-child {
-    display: none;
-} */
 
     /* responsive */
 
