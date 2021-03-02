@@ -26,10 +26,10 @@ class ProductListHerbal {
                       <p class="card-text flex-fill">${product.description}</p>
                       <div class="d-flex justify-content-around">
                         <button class="btn btn-info" data-bs-toggle="modal"
-                          data-bs-target="#productInfoModal" data-id="${product.id}">Info
+                          data-bs-target="#productInfoModal" data-id="${product.id}">Деталі
                         </button>
                         <button class="btn btn-primary buy" data-id="${product.id}">
-                          $${product.price} - Buy
+                          $${product.price} Купити
                         </button>
                       </div>
                     </div>
