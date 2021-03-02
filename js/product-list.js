@@ -78,7 +78,7 @@ class ProductListHerbal {
     modal.querySelector('.modal-body .card-text').innerText =
       product.description;
     const btnBuy = modal.querySelector('button.buy');
-    btnBuy.innerText = `${product.price} - Buy`;
+    btnBuy.innerText = `${product.price} - Купити`;
     btnBuy.dataset.id = id;
   }
   handleProductBuyClick(event) {
@@ -109,23 +109,23 @@ class ProductListSupplements {
                          : b.price - a.price)
       .forEach(product => {
         ProductListSupplementsDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-                  <div class="card product">
-                    <img class="card-img-top" src="img/products/${product.image}" 
-                        alt="${product.title}">
-                    <div class="card-body d-flex flex-column">
-                      <h4 class="card-title">${product.title}</h4>
-                      <p class="card-text flex-fill">${product.description}</p>
-                      <div class="d-flex justify-content-around">
-                        <button class="btn btn-info" data-bs-toggle="modal"
-                          data-bs-target="#productInfoModal" data-id="${product.id}">Info
-                        </button>
-                        <button class="btn btn-primary buy" data-id="${product.id}">
-                          $${product.price} - Buy
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>`;
+              <div class="card product">
+              <img class="card-img-top" src="img/products/${product.image}" 
+                  alt="${product.title}">
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">${product.title}</h4>
+                <p class="card-text flex-fill">${product.description}</p>
+                <div class="d-flex justify-content-around">
+                  <button class="btn btn-info" data-bs-toggle="modal"
+                    data-bs-target="#productInfoModal" data-id="${product.id}">Деталі
+                  </button>
+                  <button class="btn btn-primary buy" data-id="${product.id}">
+                    $${product.price} Купити
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>`;
     });
     this.container.innerHTML = ProductListSupplementsDomString;
   }
@@ -169,7 +169,7 @@ class ProductListSupplements {
     modal.querySelector('.modal-body .card-text').innerText =
       product.description;
     const btnBuy = modal.querySelector('button.buy');
-    btnBuy.innerText = `${product.price} - Buy`;
+    btnBuy.innerText = `${product.price} - Купити`;
     btnBuy.dataset.id = id;
   }
   handleProductBuyClick(event) {
@@ -200,23 +200,23 @@ class ProductListSports {
                          : b.price - a.price)
       .forEach(product => {
         ProductListSportsDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-                  <div class="card product">
-                    <img class="card-img-top" src="img/products/${product.image}" 
-                        alt="${product.title}">
-                    <div class="card-body d-flex flex-column">
-                      <h4 class="card-title">${product.title}</h4>
-                      <p class="card-text flex-fill">${product.description}</p>
-                      <div class="d-flex justify-content-around">
-                        <button class="btn btn-info" data-bs-toggle="modal"
-                          data-bs-target="#productInfoModal" data-id="${product.id}">Info
-                        </button>
-                        <button class="btn btn-primary buy" data-id="${product.id}">
-                          $${product.price} - Buy
-                        </button>
-                      </div>
-                    </div>
+                <div class="card product">
+                <img class="card-img-top" src="img/products/${product.image}" 
+                    alt="${product.title}">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">${product.title}</h4>
+                  <p class="card-text flex-fill">${product.description}</p>
+                  <div class="d-flex justify-content-around">
+                    <button class="btn btn-info" data-bs-toggle="modal"
+                      data-bs-target="#productInfoModal" data-id="${product.id}">Деталі
+                    </button>
+                    <button class="btn btn-primary buy" data-id="${product.id}">
+                      $${product.price} Купити
+                    </button>
                   </div>
-                </div>`;
+                </div>
+              </div>
+            </div>`;
     });
     this.container.innerHTML = ProductListSportsDomString;
   }
@@ -260,7 +260,7 @@ class ProductListSports {
     modal.querySelector('.modal-body .card-text').innerText =
       product.description;
     const btnBuy = modal.querySelector('button.buy');
-    btnBuy.innerText = `${product.price} - Buy`;
+    btnBuy.innerText = `${product.price} - Купити`;
     btnBuy.dataset.id = id;
   }
   handleProductBuyClick(event) {
@@ -291,23 +291,23 @@ class ProductListProbiotics {
                          : b.price - a.price)
       .forEach(product => {
         ProductListProbioticsDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-                  <div class="card product">
-                    <img class="card-img-top" src="img/products/${product.image}" 
-                        alt="${product.title}">
-                    <div class="card-body d-flex flex-column">
-                      <h4 class="card-title">${product.title}</h4>
-                      <p class="card-text flex-fill">${product.description}</p>
-                      <div class="d-flex justify-content-around">
-                        <button class="btn btn-info" data-bs-toggle="modal"
-                          data-bs-target="#productInfoModal" data-id="${product.id}">Info
-                        </button>
-                        <button class="btn btn-primary buy" data-id="${product.id}">
-                          $${product.price} - Buy
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>`;
+              <div class="card product">
+              <img class="card-img-top" src="img/products/${product.image}" 
+                  alt="${product.title}">
+              <div class="card-body d-flex flex-column">
+                <h4 class="card-title">${product.title}</h4>
+                <p class="card-text flex-fill">${product.description}</p>
+                <div class="d-flex justify-content-around">
+                  <button class="btn btn-info" data-bs-toggle="modal"
+                    data-bs-target="#productInfoModal" data-id="${product.id}">Деталі
+                  </button>
+                  <button class="btn btn-primary buy" data-id="${product.id}">
+                    $${product.price} Купити
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>`;
     });
     this.container.innerHTML = ProductListProbioticsDomString;
   }
@@ -351,7 +351,7 @@ class ProductListProbiotics {
     modal.querySelector('.modal-body .card-text').innerText =
       product.description;
     const btnBuy = modal.querySelector('button.buy');
-    btnBuy.innerText = `${product.price} - Buy`;
+    btnBuy.innerText = `${product.price} - Купити`;
     btnBuy.dataset.id = id;
   }
   handleProductBuyClick(event) {
@@ -383,23 +383,23 @@ class ProductListVitamins {
                          : b.price - a.price)
       .forEach(product => {
         ProductListVitaminsDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-                  <div class="card product">
-                    <img class="card-img-top" src="img/products/${product.image}" 
-                        alt="${product.title}">
-                    <div class="card-body d-flex flex-column">
-                      <h4 class="card-title">${product.title}</h4>
-                      <p class="card-text flex-fill">${product.description}</p>
-                      <div class="d-flex justify-content-around">
-                        <button class="btn btn-info" data-bs-toggle="modal"
-                          data-bs-target="#productInfoModal" data-id="${product.id}">Info
-                        </button>
-                        <button class="btn btn-primary buy" data-id="${product.id}">
-                          $${product.price} - Buy
-                        </button>
-                      </div>
-                    </div>
+                <div class="card product">
+                <img class="card-img-top" src="img/products/${product.image}" 
+                    alt="${product.title}">
+                <div class="card-body d-flex flex-column">
+                  <h4 class="card-title">${product.title}</h4>
+                  <p class="card-text flex-fill">${product.description}</p>
+                  <div class="d-flex justify-content-around">
+                    <button class="btn btn-info" data-bs-toggle="modal"
+                      data-bs-target="#productInfoModal" data-id="${product.id}">Деталі
+                    </button>
+                    <button class="btn btn-primary buy" data-id="${product.id}">
+                      $${product.price} Купити
+                    </button>
                   </div>
-                </div>`;
+                </div>
+              </div>
+            </div>`;
     });
     this.container.innerHTML = ProductListVitaminsDomString;
   }
@@ -443,7 +443,7 @@ class ProductListVitamins {
     modal.querySelector('.modal-body .card-text').innerText =
       product.description;
     const btnBuy = modal.querySelector('button.buy');
-    btnBuy.innerText = `${product.price} - Buy`;
+    btnBuy.innerText = `${product.price} - Купити`;
     btnBuy.dataset.id = id;
   }
   handleProductBuyClick(event) {
