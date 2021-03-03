@@ -3,7 +3,7 @@ class ProductListHerbal {
     this.cart = cart;
     this.container = document.querySelector('.products-container-herbal');
     this.productService = new ProductsService();
-    this.sortDirection = 'ascending';
+    // this.sortDirection = 'ascending';
     this.productService
       .getProducts()
       .then(() => this.renderProducts())
@@ -13,9 +13,9 @@ class ProductListHerbal {
     let ProductListHerbalDomString = '';
     const products = await this.productService.getProducts();
     [...products]
-      .sort( (a, b) => this.sortDirection === 'ascending' 
-                         ? a.price - b.price
-                         : b.price - a.price)
+      // .sort( (a, b) => this.sortDirection === 'ascending' 
+      //                    ? a.price - b.price
+      //                    : b.price - a.price)
       .forEach(product => {
         ProductListHerbalDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                   <div class="card product">
